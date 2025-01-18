@@ -14,15 +14,20 @@ body{
     height: 100vh;
     color: white;
 }
-kbd{
-    display: block;
-    font-size: 40px
+.key kbd{
+    font-size: 1.5rem;
+}
+.key .sound{
+    font-size: 1rem;
+    color: #ffc600;
 }
 .keys{
     text-transform: uppercase;
     color: #37ff1d;
     font-family: 'Courier New', Courier, monospace;
     display: flex;
+    flex-wrap: wrap;
+    width:100%;
     justify-content: center;
     align-items: center;
     
@@ -33,15 +38,16 @@ kbd{
     margin: 0.5rem;
     text-transform: uppercase;
     background: rgba(0, 0, 0, 0.4);
-    padding: .5rem .5rem;
+    padding: .1rem;
     transition: all 0.07s;
     display: flex;
     flex-direction: column;
     text-align: center;
-    font: bolder;
+    font-weight: bolder;
     color:white;
     width: 120px;
     border: solid 4px black;
+    box-sizing: border-box;
 }
 .playing{
     transform: scale(1.1);
@@ -49,8 +55,3 @@ kbd{
     box-shadow: 0 0 10px #ffc600;
 }
 
-.sound{
-    font-size: 1.2rem;
-    text-transform: uppercase;
-    color: #ffc600;
-}
